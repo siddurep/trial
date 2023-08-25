@@ -1,3 +1,4 @@
 FROM ubuntu
 RUN ls
 RUN apt update apt -y
+RUN sleep 5
