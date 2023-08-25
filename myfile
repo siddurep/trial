@@ -2,3 +2,23 @@ FROM ubuntu
 RUN ls
 RUN apt update apt -y
 RUN sleep 5
+
+
+pipeline {
+  agent any
+    stages {
+      stage('checkut') {
+        steps {
+           echo "check out"
+              }
+}
+
+      stage('build ') {
+         steps {
+           echo "buid"
+    }
+  }
+    }
+}
+
+}
